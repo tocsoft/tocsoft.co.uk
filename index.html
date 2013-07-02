@@ -25,6 +25,13 @@
         #skills dt.stars-1::after      { content:'\f005\f006\f006\f006\f006\f006'; }
         #skills dt.stars-half::after   { content:'\f123\f006\f006\f006\f006\f006'; }
         
+        #skills dt{ 
+            overflow: hidden;
+            background-color: #eee;
+            margin-top: 2px;
+            padding: 2px;
+            border-radius: 2px;
+        }
 
         #skills{
             float:right;
@@ -38,7 +45,7 @@
         #portfolio article {
             float:left;
             width:48%;
-            min-height:250px;
+            min-height:190px;
             
             margin-right:2%;
         }
@@ -56,7 +63,7 @@
         }
 
         #wrapper {
-          width: 900px;
+          max-width: 900px;
 margin: 0 auto;
 position: relative;
 background-color: white;
@@ -155,12 +162,60 @@ padding:10px;
                 content:'until';
                 margin-right:4px;
             }
+        
+        @media screen and (max-width: 770px){
+            #skills{
+                width: 40%;
+            }
+            #main {
+                width: 55%;
+            }
+            #portfolio article{
+                width: 100%;
+            min-height: initial;
+            }
+        }
+        
+        @media screen and (max-width: 600px){
+            #skills{
+                width: 49%;
+            }
+            #main {
+                width: 49%;
+            }
+        #employment, #education{
+            float: right;
+            width:47%;
+        }
+            #portfolio article{
+                width: 100%;
+            min-height:initial;
+            }
+        }
+        
+        @media screen and (max-width: 480px){
+            #skills{
+                width: 100%;
+            }
+            #main {
+                width: 100%;
+            }
+        #employment, #education{
+            float: right;
+            width:100%;
+        }
+            #portfolio article{
+                width: 100%;
+            min-height:initial;
+            }
+        #map{ display: none;}
+        }
     </style>
 </head>
 <body>
     <div id="wrapper">
     <header id="header">
-        <iframe style="width: 60%; float: right; height: 200px;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=Birkenhead&amp;hl=en&amp;sll=37.0625,-95.677068&amp;sspn=46.495626,87.626953&amp;hnear=Birkenhead,+Merseyside,+United+Kingdom&amp;t=m&amp;ie=UTF8&amp;hq=&amp;ll=53.390034,-3.023129&amp;spn=0.008958,0.004292&amp;z=15&amp;output=embed"></iframe>
+        <iframe id="map" style="width: 60%; float: right; height: 200px;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=Birkenhead&amp;hl=en&amp;sll=37.0625,-95.677068&amp;sspn=46.495626,87.626953&amp;hnear=Birkenhead,+Merseyside,+United+Kingdom&amp;t=m&amp;ie=UTF8&amp;hq=&amp;ll=53.390034,-3.023129&amp;spn=0.008958,0.004292&amp;z=15&amp;output=embed"></iframe>
 
         <h1>Scott Williams</h1>
         <p>Based in <a target="_blank" href="https://maps.google.com/maps?q=Birkenhead&hl=en&ll=53.388703,-3.020725&spn=0.034398,0.085573&sll=37.0625,-95.677068&sspn=46.495626,87.626953&hnear=Birkenhead,+Merseyside,+United+Kingdom&t=m&z=14">Birkenhead, Wirral</a></p>
