@@ -1,22 +1,381 @@
----
-layout: page
-title: Musings of the Scottmonkey
----
-{% include JB/setup %}
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Scott Williams</title><link href='http://fonts.googleapis.com/css?family=Averia+Serif+Libre:700|Inconsolata' rel='stylesheet' type='text/css'>
+    <style>
+        @import url('css/font-awesome.css');
+        p,a, dd, dt {
+        font-family: 'Inconsolata', sans-serif;
 
-  {% for post in site.posts %}
+        }
+        #skills dt::after{
+            font-family:FontAwesome;
+            float:right;
+        }
+        #skills dt.stars-5-half::after { content:'\f005\f005\f005\f005\f005\f123'; }
+        #skills dt.stars-5::after      { content:'\f005\f005\f005\f005\f005\f006'; }
+        #skills dt.stars-4-half::after { content:'\f005\f005\f005\f005\f123\f006'; }
+        #skills dt.stars-4::after      { content:'\f005\f005\f005\f005\f006\f006'; }
+        #skills dt.stars-3-half::after { content:'\f005\f005\f005\f123\f006\f006'; }
+        #skills dt.stars-3::after      { content:'\f005\f005\f005\f006\f006\f006'; }
+        #skills dt.stars-2-half::after { content:'\f005\f005\f123\f006\f006\f006'; }
+        #skills dt.stars-2::after      { content:'\f005\f005\f006\f006\f006\f006'; }
+        #skills dt.stars-1-half::after { content:'\f005\f123\f006\f006\f006\f006'; }
+        #skills dt.stars-1::after      { content:'\f005\f006\f006\f006\f006\f006'; }
+        #skills dt.stars-half::after   { content:'\f123\f006\f006\f006\f006\f006'; }
+        
 
-   <div class="post-preview">
-       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-       <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
-       {{ post.content | split:'<!--break-->' | first }}
-       {% if post.content contains '<!--break-->' %}
-          <a href="{{ post.url }}">read more</a>
-       {% endif %}
-        <div>
-            <a href="{{ post.url }}#disqus_thread">Comments</a>
-        </div>
-   </div>
-   <hr>
+        #skills{
+            float:right;
+            width:33%;
+        }
+        #main {
+            float:left;
+            width:66%;
+        }
 
-  {% endfor %}
+        #portfolio article {
+            float:left;
+            width:48%;
+            min-height:250px;
+            
+            margin-right:2%;
+        }
+        
+       
+
+        #employment {
+            float:left;
+            width:49%;
+            margin-right:2%;
+        }
+        #education {
+            float:left;
+            width:49%;
+        }
+
+        #wrapper {
+          width: 900px;
+margin: 0 auto;
+position: relative;
+background-color: white;
+overflow: auto;
+padding:10px;
+        }
+        body {
+            background-color:#aaa;
+            margin:0;
+            padding:0;
+        }
+
+        nav {
+            position:absolute; 
+            right:0;
+            top:0;
+        }
+        #skills dd {
+            display:none;
+                
+            margin:0;
+            padding:2px 0 5px 0;
+            text-align:center;
+        }
+        #skills dt:hover + dd {
+            display:block;
+        }
+        ul.tags,
+        .tags li {
+            margin:0;
+            padding:0;
+            list-style:none;
+        }
+        .tags li {
+            display:inline-block;
+            margin:2px;
+            padding:2px 4px;
+            background-color:#eee;
+            border-radius:2px;
+        }
+
+        h3 {
+            position:absolute;
+            left:-999px;
+        }
+        .contact a {
+            padding-left:5px;
+        }
+            .contact a::before {
+            color:black;
+            padding-right:5px;
+            }
+        ul.contact,
+        .contact li {
+            margin:0;
+            padding:0;
+            list-style-type:none;
+        }
+
+        #portfolio article h2 a::before {
+            color:black;
+            padding-right:5px;
+        }
+
+        #header {
+            border-bottom:1px solid #aaa;
+            margin-bottom:5px;
+            padding-bottom:5px;
+            overflow:hidden;
+        }
+        section h2 {
+            border-top:1px solid #aaa;
+        }
+
+        h1, h2, h3, h4,
+        h1 a, h2 a, h3 a, h4 a {
+        font-family: 'Averia Serif Libre', cursive;
+        text-decoration:none;
+        font-weight:bold;
+        }
+        p.notes {
+            font-style:italic;
+        }
+        ol.period,
+        .period li {
+            padding:0; margin:0;
+            list-style:none;
+            display:inline;
+            font-style:italic;
+        }
+            .period li.start_date::before {
+                content:'from';
+                margin-right:4px;
+            }
+            .period li.end_date::before {
+                content:'until';
+                margin-right:4px;
+            }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+    <header id="header">
+        <iframe style="width: 60%; float: right; height: 200px;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=Birkenhead&amp;hl=en&amp;sll=37.0625,-95.677068&amp;sspn=46.495626,87.626953&amp;hnear=Birkenhead,+Merseyside,+United+Kingdom&amp;t=m&amp;ie=UTF8&amp;hq=&amp;ll=53.390034,-3.023129&amp;spn=0.008958,0.004292&amp;z=15&amp;output=embed"></iframe>
+
+        <h1>Scott Williams</h1>
+        <p>Based in <a target="_blank" href="https://maps.google.com/maps?q=Birkenhead&hl=en&ll=53.388703,-3.020725&spn=0.034398,0.085573&sll=37.0625,-95.677068&sspn=46.495626,87.626953&hnear=Birkenhead,+Merseyside,+United+Kingdom&t=m&z=14">Birkenhead, Wirral</a></p>
+        <ul class="contact">
+            <li><i class="icon-envelope"></i><a target="_blank" href="mailto:tocsoft@gmail.com">tocsoft@gmail.com</a></li>
+            <li><i class="icon-twitter"></i><a target="_blank" href="http://twitter.com/tocsoft">@tocsoft</a></li>
+            <li><i class="icon-github"></i><a target="_blank" href="https://github.com/tocsoft/">github.com/tocsoft</a></li>
+            <li><i class="icon-stackexchange"></i><a target="_blank" href="http://stackoverflow.com/users/234855/tocsoft">stackoverflow.com</a></li>
+            
+        </ul>
+        
+    </header>
+    
+
+    <section id="skills">
+            <h1>Skills</h1>
+            <dl>
+                <dt class="stars-5"><a target="_blank" href="http://en.wikipedia.org/wiki/C_Sharp_(programming_language)">C#</a></dt>
+                <dd >Advanced active usage</dd>
+                <dt class="stars-4-half"><a href="http://www.asp.net/mvc" target="_blank">ASP.net MVC</a></dt>
+                <dd>In active use</dd>
+                <dt class="stars-4-half"><a href="http://en.wikipedia.org/wiki/ASP.NET_Razor_view_engine" target="_blank">Razor</a></dt>
+                <dd>In active use</dd>
+                <dt class="stars-4"><a href="https://en.wikipedia.org/wiki/HTML" target="_blank">HTML</a></dt>
+                <dd>In active use</dd>
+                <dt class="stars-4"><a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank">CSS</a></dt>
+                <dd>In active use</dd>
+                <dt class="stars-3-half"><a href="http://lesscss.org/" target="_blank">LESS</a></dt>
+                <dd>In active use</dd>
+                <dt class="stars-4-half"><a href="http://jquery.com/" target="_blank">jQuery</a></dt>
+                <dd>In active use</dd>
+                <dt class="stars-4"><a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a></dt>
+                <dd>In active use</dd>
+                <dt class="stars-3"><a href="http://www.microsoft.com/en-us/sqlserver" target="_blank">MsSQL</a></dt>
+                <dd>In active use</dd>
+                <dt class="stars-2-half"><a href="http://www.mysql.com/" target="_blank">MySQL</a></dt>
+                <dd>In active use</dd>
+                <dt class="stars-3"><a href="http://nhforge.org/" target="_blank">NHibernate</dt>
+                <dd>In active use</dd>
+                <dt class="stars-half"><a href="http://www.elasticsearch.org/" target="_blank">Elastic Search</a></dt>
+                <dd>In active use</dd>
+                <dt class="stars-4-half"><a href="http://umbraco.com/" target="_blank">Umbraco</a></dt>
+                <dd>Advanced active usage</dd>
+                <dt class="stars-3"><a href="http://couchdb.apache.org/" target="_blank">CouchDB</a></dt>
+                <dd>Recent active usage</dd>
+                <dt class="stars-4"><a href="http://www.appcelerator.com/platform/titanium-platform/" target="_blank">Titanium Mobile</a></dt>
+                <dd>Recent active usage</dd>
+                <dt class="stars-2"><a href="http://php.net/" target="_blank">PHP</a></dt>
+                <dd>Past experience</dd>
+                <dt class="stars-1"><a href="http://angularjs.org/" target="_blank">AngularJS</a></dt>
+                <dd>Exposure</dd>
+                <dt class="stars-4"><a href="http://en.wikipedia.org/wiki/List_of_HTTP_status_codes#418" target="_blank">Tea/Coffee Making</a></dt>
+                <dd>Occasional use excellent ability</dd>
+            </dl>
+
+        </section>
+    <div id="main">
+    <section id="profile">
+        <h1>Profile</h1>
+        <p>I am a passionate and proficient C# Developer with more than 6 years’ experience producing code in a fast paced agency setting. 
+           I am constantly honing my developer skills, keeping abreast with the latest trends in web development circles, and apply my knowledge to implement a range of practical solutions with the utmost efficiency. 
+           I possess a proven track record of developing .NET applications and am seeking a role that will utilise and expand on these skills. </p>
+        
+    
+    </section>
+    <section id="portfolio">
+        <h1>Portfolio</h1>
+        <article>
+            <h2><i class="icon-github"></i><a target="_blank" href="https://github.com/tocsoft/rocker" >Rocker</a></h2>
+            <p>a c# POCO wrapper to CouchDB</p>
+            <p class="notes">No longer in active development.</p>
+            <h3>Skills</h3>
+            <ul class="tags">
+                <li>C#</li>
+                <li>CouchDB</li>
+            </ul>
+        </article>
+        
+        <article>
+            <h2><i class="icon-github"></i><a target="_blank" href="https://github.com/tocsoft/Common.Helpers">Common.Helpers</a></h2>
+            <p>a suite of common helper libraries used in a verity of client projects</p>
+            <h3>Skills</h3>
+            <ul class="tags">
+                <li>C#</li>
+            </ul>
+        </article>
+
+        <article class="JavaScript jQuery">
+            <h2><i class="icon-github"></i><a target="_blank" href="https://github.com/ICE-Creates/jquery.dirtyform" >jquery.dirtyform</a></h2>
+            <p>A jQuery plug-in that can prevent navigation away from a webpage if any of the form fields have been altered.</p>
+            <h3>Skills</h3>
+            <ul class="tags">
+                <li>JavaScript</li>
+                <li>jQuery</li>
+            </ul>
+        </article>
+        
+        <article class="sql javascript jquery c_sharp mvc css html nhibernate elastic_search">
+            <h2><a target="_blank" href="https://puffell.com/" >Puffell.com</a></h2>
+            <p>Head developer for platform</p>
+            <h3>Skills</h3>
+            <ul class="tags">
+                <li>C#</li>
+                <li>SQL</li>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+                <li>Razor</li>
+                <li>ASP.net MVC</li>
+                <li>CSS</li>
+                <li>HTML</li>
+                <li>NHibernate</li>
+                <li>Elastic Search</li>
+            </ul>
+        </article>
+        
+        <article class="sql javascript jquery c_sharp mvc css html nhibernate elastic_search">
+            <h2>Healthy Schools Programme website</h2>
+            <p class="notes">This website is no longer live as the programme was drastically reduced under the coalition changes</p>
+            <p>This was a website servicing all schools across all of England and Wales. The system provided was a self validation and tracking platform to improve the health and wellbeing of schools and pupils. This platform had massive reporting and a strict hierarchical security model.</p>
+            <h3>Skills</h3>
+            <ul class="tags">
+                <li>C#</li>
+                <li>SQL</li>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+                <li>ASP.net MVC</li>
+                <li>CSS</li>
+                <li>HTML</li>
+                <li>NHibernate</li>
+            </ul>
+        </article>
+        <article class="sql javascript jquery c_sharp mvc css html nhibernate">
+            <h2><a target="_blank" href="http://scoile.apphb.com/">Scoile</a></h2>
+            <p>Owner and lead developer of Scoile, a screen scraping api system.</p>
+             <h3>Skills</h3>
+            <ul class="tags">
+                <li>C#</li>
+                <li>SQL</li>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+                <li>Razor</li>
+                <li>ASP.net MVC</li>
+                <li>CSS</li>
+                <li>HTML</li>
+                <li>NHibernate</li>
+            </ul>
+        </article>
+    </section></div>
+
+    <section id="employment">
+        <h1>Employment History</h1>
+
+        <article>
+
+            <h2><a target="_blank" href="http://icecreates.com">ICE Creates Ltd</a></h2>
+            <h3>Senior Developer</h3>
+            <ol class="period">
+                <li class="start_date">Mar 2007</li>
+                <li class="end_date">Present</li>
+            </ol>
+            <p>Over the long period of time I have been employed at ICE i have progressed when I joined in 2007 from being employed as a Junior developer working up the line to now being a Senior developer who acts as the technical lead/architect on the software produced.</p>
+            <p></p>
+            
+        </article>
+
+        <article>
+
+            <h2>Baum Hart and Partners</h2>
+            <h3> Software Implementation Technician </h3>
+            <ol class="period">
+                <li class="start_date">Mar 2006</li>
+                <li class="end_date">Mar 2007</li>
+            </ol>
+
+            <p>During my time here parts of my job involved taking help desk calls, then trying to replicate the errors and 
+investigation into the problem the user is facing while using a bespoke 
+piece of software being implemented by multiple NHS trusts and 
+hospitals around the country. Also having to do data preparation by 
+developing SQL scripts to extract live data from databases for later 
+use in updates and reports. My responsibilities also includes managing 
+the office network as the office technical support personal, with a 
+primary responsibility, but not limited, to maintain the web, SQL and 
+files servers, also in the roll of Technical Support officer I am 
+responsible in supporting the technical network solutions for our 
+clients.</p>
+        </article>
+
+    </section>
+
+    <section id="education">
+        <h1>Education</h1>
+        <article>
+            <h2>University of Wales Aberystwyth, (Internet Computing)</h2>
+            <ol class="period">
+                <li class="start_date">2002</li>
+                <li class="end_date">2005</li>
+            </ol>
+            <p>Some of the skills i developed at my time here are; Project Management, Teamwork, Programming,
+Internet Development tools, Internet technologies.</p>
+        </article>
+        <article>
+            <h2>Birkenhead Sixth Form Collage</h2>
+            <ol class="period">
+                <li class="start_date">2002</li>
+                <li class="end_date">2005</li>
+            </ol>
+            <dl>
+               <dt>A levels</dt> 
+                <dd>Computing, Maths</dd>
+               <dt>AS levels</dt> 
+                <dd>Advanced Maths, Physics</dd>
+            </dl>
+        </article>
+    </section>
+
+</div>
+
+</body>
+</html>
