@@ -33,7 +33,7 @@
             overflow: hidden;
             background-color: #eee;
             margin-top: 2px;
-            padding: 2px;
+            padding: 2px 5px;
             border-radius: 2px;
         }
 
@@ -48,11 +48,31 @@
 
         #portfolio article {
             float:left;
-            width:48%;
+            width:46%;
             min-height:190px;
             
             margin-right:2%;
+            border-radius: 2px;
+            margin-bottom: 10px;
+            border: 1px solid #efefef
         }
+     #portfolio article h2 i {
+     margin-right: 5px;
+     }
+     #portfolio article h2 a {
+       display: inline-block;
+width: 80%;
+     }
+     #portfolio article h2 {
+        margin: 0;
+        overflow: hidden;
+            background-color: #efefef;
+     }
+     #portfolio article > * {
+     
+            padding: 0 10px;
+            
+     }
         
        
 
@@ -60,10 +80,12 @@
             float:left;
             width:49%;
             margin-right:2%;
+            border-top: 1px solid #eee;
         }
         #education {
             float:left;
             width:49%;
+            border-top: 1px solid #aaa;
         }
 
         #wrapper {
@@ -138,9 +160,6 @@ padding:10px;
             padding-bottom:5px;
             overflow:hidden;
         }
-        section h2 {
-            border-top:1px solid #aaa;
-        }
 
         h1, h2, h3, h4,
         h1 a, h2 a, h3 a, h4 a {
@@ -169,7 +188,11 @@ padding:10px;
                 margin-right:4px;
             font-weight: normal;
             }
-        
+
+     h1 {
+        font-size:2em;
+        margin: 0;
+     }
         @media screen and (max-width: 770px){
             #skills{
                 width: 40%;
@@ -240,42 +263,72 @@ padding:10px;
     <section id="skills">
             <h1>Skills</h1>
             <dl>
-                <dt class="stars-5"><a target="_blank" href="http://en.wikipedia.org/wiki/C_Sharp_(programming_language)">C#</a></dt>
-                <dd >Advanced active usage</dd>
+                <dt class="stars-1"><a href="http://angularjs.org/" target="_blank">AngularJS</a></dt>
+                <dd>Exposure</dd>
                 <dt class="stars-4-half"><a href="http://www.asp.net/mvc" target="_blank">ASP.net MVC</a></dt>
                 <dd>In active use</dd>
-                <dt class="stars-4-half"><a href="http://en.wikipedia.org/wiki/ASP.NET_Razor_view_engine" target="_blank">Razor</a></dt>
-                <dd>In active use</dd>
-                <dt class="stars-4"><a href="https://en.wikipedia.org/wiki/HTML" target="_blank">HTML</a></dt>
-                <dd>In active use</dd>
+                
+                <dt class="stars-5"><a target="_blank" href="http://en.wikipedia.org/wiki/C_Sharp_(programming_language)">C#</a></dt>
+                <dd >Advanced active usage</dd>
+                <dt class="stars-3"><a href="http://couchdb.apache.org/" target="_blank">CouchDB</a></dt>
+                <dd>Recent active usage</dd>
                 <dt class="stars-4"><a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank">CSS</a></dt>
                 <dd>In active use</dd>
-                <dt class="stars-3-half"><a href="http://lesscss.org/" target="_blank">LESS</a></dt>
+                
+                <dt class="stars-half"><a href="http://www.elasticsearch.org/" target="_blank">Elastic Search</a></dt>
+                <dd>In active use</dd>
+                
+                <dt class="stars-3"><a href="http://www.adobe.com/uk/products/fireworks.html" target="_blank">Fireworks</a></dt>
+                <dd>Preferred graphics software</dd>
+
+                
+                <dt class="stars-1-half"><a href="http://git-scm.com/" target="_blank">GIT</a></dt>
+                <dd>Preferred source control software</dd>
+                 
+                <dt class="stars-4"><a href="https://en.wikipedia.org/wiki/HTML" target="_blank">HTML</a></dt>
+                <dd>In active use</dd>
+                
+                <dt class="stars-4"><a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a></dt>
                 <dd>In active use</dd>
                 <dt class="stars-4-half"><a href="http://jquery.com/" target="_blank">jQuery</a></dt>
                 <dd>In active use</dd>
-                <dt class="stars-4"><a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a></dt>
+                
+                <dt class="stars-3-half"><a href="http://lesscss.org/" target="_blank">LESS</a></dt>
                 <dd>In active use</dd>
+                
                 <dt class="stars-3"><a href="http://www.microsoft.com/en-us/sqlserver" target="_blank">MsSQL</a></dt>
                 <dd>In active use</dd>
                 <dt class="stars-2-half"><a href="http://www.mysql.com/" target="_blank">MySQL</a></dt>
                 <dd>In active use</dd>
+                
                 <dt class="stars-3"><a href="http://nhforge.org/" target="_blank">NHibernate</a></dt>
                 <dd>In active use</dd>
-                <dt class="stars-half"><a href="http://www.elasticsearch.org/" target="_blank">Elastic Search</a></dt>
+                <dt class="stars-3"><a href="http://www.nunit.org/‎" target="_blank">NUnit</a></dt>
                 <dd>In active use</dd>
-                <dt class="stars-4-half"><a href="http://umbraco.com/" target="_blank">Umbraco</a></dt>
-                <dd>Advanced active usage</dd>
-                <dt class="stars-3"><a href="http://couchdb.apache.org/" target="_blank">CouchDB</a></dt>
-                <dd>Recent active usage</dd>
-                <dt class="stars-4"><a href="http://www.appcelerator.com/platform/titanium-platform/" target="_blank">Titanium Mobile</a></dt>
-                <dd>Recent active usage</dd>
+
                 <dt class="stars-2"><a href="http://php.net/" target="_blank">PHP</a></dt>
                 <dd>Past experience</dd>
-                <dt class="stars-1"><a href="http://angularjs.org/" target="_blank">AngularJS</a></dt>
-                <dd>Exposure</dd>
+
+                <dt class="stars-4-half"><a href="http://en.wikipedia.org/wiki/ASP.NET_Razor_view_engine" target="_blank">Razor</a></dt>
+                <dd>In active use</dd>
+
+                
+                <dt class="stars-2-half"><a href="http://seleniumhq.org‎" target="_blank">Selenium </a></dt>
+                <dd>Recent active use</dd>
+                
+                <dt class="stars-2-half"><a href="http://www.jetbrains.com/teamcity/" target="_blank">TeamCity</a></dt>
+                <dd>Setting up and configuring builds</dd>
                 <dt class="stars-4"><a href="http://en.wikipedia.org/wiki/List_of_HTTP_status_codes#418" target="_blank">Tea/Coffee Making</a></dt>
                 <dd>Occasional use excellent ability</dd>
+                <dt class="stars-4"><a href="http://www.appcelerator.com/platform/titanium-platform/" target="_blank">Titanium Mobile</a></dt>
+                <dd>Recent active usage</dd>
+            
+                <dt class="stars-4-half"><a href="http://umbraco.com/" target="_blank">Umbraco</a></dt>
+                <dd>Advanced active usage</dd>
+
+                <dt class="stars-3-half"><a href="http://umbraco.com/" target="_blank">WinForms</a></dt>
+                <dd>Recent active usage</dd>
+                
             </dl>
 
         </section>
@@ -338,6 +391,39 @@ padding:10px;
             </ul>
         </article>
         
+        <article class="sql javascript jquery c_sharp mvc css html nhibernate">
+            <h2><a target="_blank" href="http://scoile.apphb.com/">Scoile</a></h2>
+            <p>Owner and lead developer of Scoile, a screen scraping api system.</p>
+             <h3>Skills</h3>
+            <ul class="tags">
+                <li>C#</li>
+                <li>SQL</li>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+                <li>Razor</li>
+                <li>ASP.net MVC</li>
+                <li>CSS</li>
+                <li>HTML</li>
+                <li>NHibernate</li>
+            </ul>
+        </article>
+        <article class="sql javascript jquery c_sharp mvc css html nhibernate">
+            <h2><a target="_blank" href="http://www.youthsporttrust.org/">Youth Sport Trust</a></h2>
+            <p>Primary developer, creating an information website, which includes members section intergrating with 3rd part custom authentivcation service.</p>
+             <h3>Skills</h3>
+            <ul class="tags">
+                <li>C#</li>
+                <li>SQL</li>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+                <li>Razor</li>
+                <li>CSS</li>
+                <li>HTML</li>
+                <li>NHibernate</li>
+                <li>Umbraco</li>
+            </ul>
+        </article>
+        
         <article class="sql javascript jquery c_sharp mvc css html nhibernate elastic_search">
             <h2>Healthy Schools Programme website</h2>
             <p class="notes">This website is no longer live as the programme was drastically reduced under the coalition changes</p>
@@ -355,19 +441,20 @@ padding:10px;
             </ul>
         </article>
         <article class="sql javascript jquery c_sharp mvc css html nhibernate">
-            <h2><a target="_blank" href="http://scoile.apphb.com/">Scoile</a></h2>
-            <p>Owner and lead developer of Scoile, a screen scraping api system.</p>
+            <h2><a target="_blank" href="http://way2wellbeing.org.uk/">Way 2 Wellbeing</a></h2>
+            <p>Primary developer, umbraco content site, with MVC based person health tracker.</p>
              <h3>Skills</h3>
             <ul class="tags">
                 <li>C#</li>
                 <li>SQL</li>
                 <li>JavaScript</li>
                 <li>jQuery</li>
-                <li>Razor</li>
                 <li>ASP.net MVC</li>
+                <li>Razor</li>
                 <li>CSS</li>
                 <li>HTML</li>
                 <li>NHibernate</li>
+                <li>Umbraco</li>
             </ul>
         </article>
     </section></div>
@@ -384,7 +471,7 @@ padding:10px;
                 <li class="end_date">Present</li>
             </ol>
             <p>Over the long period of time I have been employed at ICE I have progressed when I joined in 2007 from being employed as a Junior developer working up the line to now being a Senior developer who acts as the technical lead/architect on the software produced.</p>
-            <p></p>
+            <p>Having to extract requirements, archetect prototype solutions and then later pick and progress with final development of software finishing up the full software development lifecycle for multiple projects, for both central government and local private sector clients.</p>
             
         </article>
 
