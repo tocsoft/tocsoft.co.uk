@@ -56,6 +56,9 @@
             margin-bottom: 10px;
             border: 1px solid #efefef
         }
+     #portfolio article:nth-child(2n) {
+        clear: left;
+     }
      #portfolio article h2 i {
      margin-right: 5px;
      }
@@ -267,8 +270,10 @@ padding:10px;
             <dl>
                 <dt class="stars-1"><a href="http://angularjs.org/" target="_blank">AngularJS</a></dt>
                 <dd>Exposure</dd>
-                <dt class="stars-4-half"><a href="http://www.asp.net/mvc" target="_blank">ASP.net MVC</a></dt>
+                <dt class="stars-4-half"><a href="http://www.asp.net/mvc" target="_blank">ASP.NET MVC</a></dt>
                 <dd>In active use</dd>
+                <dt class="stars-3-half"><a href="http://www.asp.net/web-api" target="_blank">ASP.NET Web API </a></dt>
+                <dd>Recent active usage</dd>
                 
                 <dt class="stars-5"><a target="_blank" href="http://en.wikipedia.org/wiki/C_Sharp_(programming_language)">C#</a></dt>
                 <dd >Advanced active usage</dd>
@@ -337,7 +342,7 @@ padding:10px;
     <div id="main">
     <section id="profile">
         <h1>Profile</h1>
-        <p>I am a passionate and proficient C# Developer with more than 6 years’ experience producing code in a fast paced agency setting. 
+        <p>I am a passionate and proficient C# Developer with more than 6 years’ experience producing web complex applications in a fast paced agency setting. 
            I am constantly honing my developer skills, keeping abreast with the latest trends in web development circles, and apply my knowledge to implement a range of practical solutions with the utmost efficiency. 
            I possess a proven track record of developing .NET applications and am seeking a role that will utilise and expand on these skills. </p>
         
@@ -345,6 +350,45 @@ padding:10px;
     </section>
     <section id="portfolio">
         <h1>Portfolio</h1>
+        <article>
+            <h2><i class="icon-mobile-phone "></i>SeX Factor</h2>
+            <p>The mobile app is a game aimed as young people to teach them some fact about sexual health.</p>
+            <p>The app is availible for both android and iphone.</p>
+            <a href="https://play.google.com/store/apps/details?id=KX4646B8J2.ice.EazeeScreen.BlockBuster&feature=search_result" target="_blank">Play store</a>
+            <a href="https://itunes.apple.com/gb/app/sex-factor/id418132844" target="_blank">Itunes</a>
+            
+            <h3>Skills</h3>
+            <ul class="tags">
+                <li>Titanium Mobile</li>
+                <li>JavaScript</li>
+                <li>Web Services</li>
+                <li>Maps</li>
+            </ul>
+        </article>
+        <article>
+            <h2><i class="icon-mobile-phone "></i>STELa Lite</h2>
+            <p>The mobile app is based around a social marketing model, and lets you track your progress thought the model.</p>
+            <p>The app is availible for both android and iphone.</p>
+            <a href="https://play.google.com/store/apps/details?id=KX4646B8J2.com.STELa.mobile.app.lite" target="_blank">Play store</a>
+            <a href="https://itunes.apple.com/gb/app/stela-lite/id427949931" target="_blank">Itunes</a>
+            
+            <h3>Skills</h3>
+            <ul class="tags">
+                <li>Titanium Mobile</li>
+                <li>JavaScript</li>
+            </ul>
+        </article>
+        
+        <article>
+            <h2><i class="icon-github"></i><a target="_blank" href="https://github.com/tocsoft/rocker" >Rocker</a></h2>
+            <p>a c# POCO wrapper to CouchDB</p>
+            <p class="notes">No longer in active development.</p>
+            <h3>Skills</h3>
+            <ul class="tags">
+                <li>C#</li>
+                <li>CouchDB</li>
+            </ul>
+        </article>
         <article>
             <h2><i class="icon-github"></i><a target="_blank" href="https://github.com/tocsoft/rocker" >Rocker</a></h2>
             <p>a c# POCO wrapper to CouchDB</p>
@@ -426,22 +470,6 @@ padding:10px;
             </ul>
         </article>
         
-        <article class="sql javascript jquery c_sharp mvc css html nhibernate elastic_search">
-            <h2>Healthy Schools Programme website</h2>
-            <p class="notes">This website is no longer live as the programme was drastically reduced under the coalition changes</p>
-            <p>This was a website servicing all schools across all of England and Wales. The system provided was a self validation and tracking platform to improve the health and wellbeing of schools and pupils. This platform had massive reporting and a strict hierarchical security model.</p>
-            <h3>Skills</h3>
-            <ul class="tags">
-                <li>C#</li>
-                <li>SQL</li>
-                <li>JavaScript</li>
-                <li>jQuery</li>
-                <li>ASP.net MVC</li>
-                <li>CSS</li>
-                <li>HTML</li>
-                <li>NHibernate</li>
-            </ul>
-        </article>
         <article class="sql javascript jquery c_sharp mvc css html nhibernate">
             <h2><a target="_blank" href="http://way2wellbeing.org.uk/">Way 2 Wellbeing</a></h2>
             <p>Primary developer, umbraco content site, with MVC based person health tracker.</p>
@@ -457,6 +485,22 @@ padding:10px;
                 <li>HTML</li>
                 <li>NHibernate</li>
                 <li>Umbraco</li>
+            </ul>
+        </article>
+        <article class="sql javascript jquery c_sharp mvc css html nhibernate elastic_search">
+            <h2>Healthy Schools Programme website</h2>
+            <p class="notes">This website is no longer live as the programme was drastically reduced under the coalition changes</p>
+            <p>This was a website servicing all schools across all of England and Wales. The system provided was a self validation and tracking platform to improve the health and wellbeing of schools and pupils. This platform had massive reporting and a strict hierarchical security model.</p>
+            <h3>Skills</h3>
+            <ul class="tags">
+                <li>C#</li>
+                <li>SQL</li>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+                <li>ASP.net MVC</li>
+                <li>CSS</li>
+                <li>HTML</li>
+                <li>NHibernate</li>
             </ul>
         </article>
     </section></div>
