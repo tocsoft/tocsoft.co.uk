@@ -28,7 +28,11 @@
         #skills dt.stars-1-half::after { content:'\f005\f123\f006\f006\f006\f006'; }
         #skills dt.stars-1::after      { content:'\f005\f006\f006\f006\f006\f006'; }
         #skills dt.stars-half::after   { content:'\f123\f006\f006\f006\f006\f006'; }
-        
+     section {
+     
+            page-break-inside:avoid;
+            
+     }
         #skills dt{ 
             overflow: hidden;
             background-color: #eee;
@@ -54,7 +58,8 @@
             margin-right:2%;
             border-radius: 2px;
             margin-bottom: 10px;
-            border: 1px solid #efefef
+            border: 1px solid #efefef;
+            page-break-inside:avoid;
         }
      #portfolio article:nth-child(2n) {
         clear: left;
@@ -83,7 +88,7 @@ width: 80%;
             float:left;
             width:49%;
             margin-right:2%;
-            border-top: 1px solid #eee;
+            border-top: 1px solid #aaa;
         }
         #education {
             float:left;
@@ -243,6 +248,33 @@ padding:10px;
             }
         #map{ display: none;}
         }
+
+     @media print {
+        #employment, #education {
+            float:left;
+            width:99%;
+            clear: both;
+        }
+
+         #skills {
+            width: 100%;
+        }
+         #skills dt {
+            float: left;
+width: 40%;
+margin-right: 3%;
+margin-left: 3%;
+        }
+         #main {
+            width: 100%; 
+        }
+     #skills dd {
+         display:none !important;
+         
+     }
+        }
+     
+     
     </style>
 </head>
 <body>
