@@ -8,7 +8,7 @@
 
 	<style>
         @import url('css/font-awesome.css');
-        p,a, dd, dt {
+        p,a, dd, dt, li {
             font-family: 'Inconsolata', sans-serif;
             line-height: 1.2em;
 
@@ -90,6 +90,12 @@ width: 80%;
             margin-right:2%;
             border-top: 1px solid #aaa;
         }
+
+	        #employment li,
+	        #employment dd {
+	            margin-bottom:5px;
+                 }
+
         #education {
             float:left;
             width:49%;
@@ -248,7 +254,11 @@ padding:10px;
             }
         #map{ display: none;}
         }
-
+          #employment, #education {
+            float:left;
+            width:99%;
+            clear: both;
+        }
      @media print {
          #portfolio{
          break-before: always;
@@ -389,25 +399,11 @@ margin-left: 3%;
     </section>
     <section id="portfolio">
         <h1>Portfolio</h1>
-        <article>
-            <h2><i class="icon-mobile-phone "></i>SeX Factor</h2>
-            <p>The mobile app is a game aimed as young people to teach them some fact about sexual health.</p>
-            <p>The app is availible for both android and iphone.</p>
-            <a href="https://play.google.com/store/apps/details?id=KX4646B8J2.ice.EazeeScreen.BlockBuster&feature=search_result" target="_blank">Play store</a>
-            <a href="https://itunes.apple.com/gb/app/sex-factor/id418132844" target="_blank">Itunes</a>
-            
-            <h3>Skills</h3>
-            <ul class="tags">
-                <li>Titanium Mobile</li>
-                <li>JavaScript</li>
-                <li>Web Services</li>
-                <li>Maps</li>
-            </ul>
-        </article>
-        <article>
+        
+        <article id="STELa">
             <h2><i class="icon-mobile-phone "></i>STELa Lite</h2>
             <p>The mobile app is based around a social marketing model, and lets you track your progress thought the model.</p>
-            <p>The app is availible for both android and iphone.</p>
+            <p>The app is available for both android and iphone.</p>
             <a href="https://play.google.com/store/apps/details?id=KX4646B8J2.com.STELa.mobile.app.lite" target="_blank">Play store</a>
             <a href="https://itunes.apple.com/gb/app/stela-lite/id427949931" target="_blank">Itunes</a>
             
@@ -420,7 +416,7 @@ margin-left: 3%;
         
         <article>
             <h2><i class="icon-github"></i><a target="_blank" href="https://github.com/ICE-Creates/CookieOptIn" >CookieOptIn</a></h2>
-            <p>Provide ui and an api to manage the EU cookie opt in requirement.</p>
+            <p>Provide UI and an API to manage the EU cookie opt in requirement.</p>
             <h3>Skills</h3>
             <ul class="tags">
                 <li>JavaScript</li>
@@ -440,7 +436,7 @@ margin-left: 3%;
         
         <article>
             <h2><i class="icon-github"></i><a target="_blank" href="https://github.com/tocsoft/Common.Helpers">Common.Helpers</a></h2>
-            <p>A suite of common helper libraries used in a varity of client projects.</p>
+            <p>A suite of common helper libraries used in a variety of client projects.</p>
             <h3>Skills</h3>
             <ul class="tags">
                 <li>C#</li>
@@ -477,7 +473,7 @@ margin-left: 3%;
         
         <article class="sql javascript jquery c_sharp mvc css html nhibernate">
             <h2><a target="_blank" href="http://scoile.apphb.com/">Scoile</a></h2>
-            <p>Owner and lead developer of Scoile, a screen scraping api system.</p>
+            <p>Owner and lead developer of Scoile, a screen scraping API system.</p>
              <h3>Skills</h3>
             <ul class="tags">
                 <li>C#</li>
@@ -492,14 +488,15 @@ margin-left: 3%;
             </ul>
         </article>
         <article class="sql javascript jquery c_sharp mvc css html nhibernate">
-            <h2><a target="_blank" href="http://www.youthsporttrust.org/">Youth Sport Trust</a></h2>
-            <p>Primary developer, creating an information website, which includes members section intergrating with 3rd part custom authentivcation service.</p>
+            <h2><a target="_blank" href="http://way2wellbeing.org.uk/">Way 2 Wellbeing</a></h2>
+            <p>Primary developer, Umbraco content site, with MVC based person health tracker.</p>
              <h3>Skills</h3>
             <ul class="tags">
                 <li>C#</li>
                 <li>SQL</li>
                 <li>JavaScript</li>
                 <li>jQuery</li>
+                <li>ASP.net MVC</li>
                 <li>Razor</li>
                 <li>CSS</li>
                 <li>HTML</li>
@@ -508,23 +505,6 @@ margin-left: 3%;
             </ul>
         </article>
         
-        <article class="sql javascript jquery c_sharp mvc css html nhibernate">
-            <h2><a target="_blank" href="http://way2wellbeing.org.uk/">Way 2 Wellbeing</a></h2>
-            <p>Primary developer, umbraco content site, with MVC based person health tracker.</p>
-             <h3>Skills</h3>
-            <ul class="tags">
-                <li>C#</li>
-                <li>SQL</li>
-                <li>JavaScript</li>
-                <li>jQuery</li>
-                <li>ASP.net MVC</li>
-                <li>Razor</li>
-                <li>CSS</li>
-                <li>HTML</li>
-                <li>NHibernate</li>
-                <li>Umbraco</li>
-            </ul>
-        </article>
         <article class="sql javascript jquery c_sharp mvc css html nhibernate elastic_search">
             <h2>Healthy Schools Programme website</h2>
             <p class="notes">This website is no longer live as the programme was drastically reduced under the coalition changes</p>
@@ -541,7 +521,44 @@ margin-left: 3%;
                 <li>NHibernate</li>
             </ul>
         </article>
-    </section></div>
+        <article id="SeX_Factor">
+            <h2><i class="icon-mobile-phone "></i>SeX Factor</h2>
+            <p>The mobile app is a game aimed as young people to teach them some fact about sexual health.</p>
+            <p>The app is available for both android and iphone.</p>
+            <a href="https://play.google.com/store/apps/details?id=KX4646B8J2.ice.EazeeScreen.BlockBuster&feature=search_result" target="_blank">Play store</a>
+            <a href="https://itunes.apple.com/gb/app/sex-factor/id418132844" target="_blank">Itunes</a>
+            
+            <h3>Skills</h3>
+            <ul class="tags">
+                <li>Titanium Mobile</li>
+                <li>JavaScript</li>
+                <li>Web Services</li>
+                <li>Maps</li>
+                <li>ASP.net MVC</li>
+            </ul>
+            <p>The development of this app included the development on a points of interest geo indexing system, which include reverse geocoding of postcode and location names, then distance based searching by tag.</p>
+            <p>It also includes an ASP.Net MVC based web interface to update the points of interest metadata.</p>
+        </article>
+        
+        <article class="sql javascript jquery c_sharp mvc css html nhibernate">
+            <h2><a target="_blank" href="http://www.youthsporttrust.org/">Youth Sport Trust</a></h2>
+            <p>Primary developer, creating an information website, which includes members section integrating with 3rd party custom authentication service.</p>
+             <h3>Skills</h3>
+            <ul class="tags">
+                <li>C#</li>
+                <li>SQL</li>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+                <li>Razor</li>
+                <li>CSS</li>
+                <li>HTML</li>
+                <li>NHibernate</li>
+                <li>Umbraco</li>
+            </ul>
+        </article>
+    </section>
+    
+    </div>
 
     <section id="employment">
         <h1>Employment History</h1>
@@ -556,7 +573,31 @@ margin-left: 3%;
             </ol>
             <p>Over the long period of time I have been employed at ICE I have progressed when I joined in 2007 from being employed as a junior developer working up the line to now being the most senior developer on the development team. In my role I act as the technical lead/architect on all software now being produced.</p>
             <p>Having to extract requirements, architect prototype solutions and then later pick and progress with final development of software finishing up the full software development lifecycle for multiple projects, for both central government and local private sector clients.</p>
-            
+            <p>Some of the my key achievements include:</p>
+            <ul>
+                <li>
+                    Developed mobile apps targeting both iOS and Android devices that are currently deployed to the Google play store and the Apple app store, the app where developed using native interfaces via the Titanium mobile framework. These include <a href="#SeX_Factor">SeX Factor</a> and <a href="#STELa">STELa Lite</a>.
+                </li>
+                <li>Introduced the concept and implemented continuous build systems, based on the JetBrains TeamCity build system, with continuous unit (NUnit) and integration testing (using Selenium) which would fail the build.</li>
+                <li>Sold the company on the benefits of introducing <a href="http://octopusdeploy.com/" target="_blank">Octopus deploy</a> the automated deployment system which has massively streamlined our deployment processes taking a multi stage (development, staging and production) deployment workflow from a days work to almost a one click process, to move between environment. Also setup our build server to automatically deploy, via octopus deploy, to our development environment so we can have very tight feedback cycles.</li>
+                <li>Source control, introduced the benefits of standardised source control solutions moving the company away from costly closed solutions firstly over to the one of the industry standards of SVN then later to GIT with the advent of distributed solutions and offline repository access.</li>
+                <li>Setup and instigated the use of real issue tracking and product backlog tracking solutions, initially had the team on YouTrack and later we moved over to the ubiquitous JIRA platform (due to a seemingly mature product with a larger support community).</li>
+                <li>Defined the standard sets of concepts and libraries we now using across the majority of products we produce, these include:
+                    <dl>
+                        <dt>Unit testing</dt>
+                        <dd>For unit testing NUnit all out products rely on NUnit.</dd>
+                        <dt>Inversion of control/dependency injection</dt>
+                        <dd>The IoC framework I chose was Autofac for its simple interface, with integrations with all the major ASP.Net systems (MVC, WebAPI etc).</dd>
+                        <dt>Programming languages</dt>
+                        <dd>C# is the go to server side language, with JavaScript being used in any browser based scenario.</dd>
+                        <dt>JavaScript Frameworks</dt>
+                        <dd>jQuery is now our library of first choice. I experimented with some of the other frameworks, prototype, mootools, etc. but settled on jQuery due to the size of community and range on plug-ins available for rapid development.</dd>
+                        <dt>Object Relational Mapping (ORM)</dt>
+                        <dd>NHibernate is the ORM we primarily use. I have investigated and used a variety of alternatives from custom ORMs to libraries like Entity framework and PETAPoco. Even though I found NHibernate the quickest path to success, especially when using Fluent NHibernate for object mapping.</dd>
+           
+                    </dl>
+                </li>
+            </ul>
         </article>
 
         <article>
