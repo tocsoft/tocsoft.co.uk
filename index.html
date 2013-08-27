@@ -260,14 +260,19 @@ padding:10px;
             clear: both;
         }
      @media print {
+         
          #portfolio{
-         break-before: always;
+        page-break-after: always;
+        page-break-inside: avoid;position: relative;
          
      }
         #employment, #education {
             float:left;
             width:99%;
             clear: both;
+         
+        page-break-after: always;
+        page-break-inside: avoid;position: relative;
         }
 
          #skills {
@@ -275,9 +280,9 @@ padding:10px;
         }
          #skills dt {
             float: left;
-width: 40%;
-margin-right: 3%;
-margin-left: 3%;
+width: 43%;
+margin-right: 2%;
+margin-left: 2%;
         }
          #main {
             width: 100%; 
@@ -316,74 +321,85 @@ margin-left: 3%;
 
     <section id="skills">
             <h1>Skills</h1>
+
             <dl>
-                <dt class="stars-1"><a href="http://angularjs.org/" target="_blank">AngularJS</a></dt>
-                <dd>Exposure</dd>
-                <dt class="stars-4-half"><a href="http://www.asp.net/mvc" target="_blank">ASP.NET MVC</a></dt>
-                <dd>In active use</dd>
-                <dt class="stars-3-half"><a href="http://www.asp.net/web-api" target="_blank">ASP.NET Web API </a></dt>
-                <dd>Recent active usage</dd>
                 
                 <dt class="stars-5"><a target="_blank" href="http://en.wikipedia.org/wiki/C_Sharp_(programming_language)">C#</a></dt>
                 <dd >Advanced active usage</dd>
-                <dt class="stars-3"><a href="http://couchdb.apache.org/" target="_blank">CouchDB</a></dt>
-                <dd>Recent active usage</dd>
-                <dt class="stars-4"><a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank">CSS</a></dt>
-                <dd>In active use</dd>
-                
-                <dt class="stars-half"><a href="http://www.elasticsearch.org/" target="_blank">Elastic Search</a></dt>
-                <dd>In active use</dd>
-                
-                <dt class="stars-3"><a href="http://www.adobe.com/uk/products/fireworks.html" target="_blank">Fireworks</a></dt>
-                <dd>Preferred graphics software</dd>
 
                 
-                <dt class="stars-1-half"><a href="http://git-scm.com/" target="_blank">GIT</a></dt>
-                <dd>Preferred source control software</dd>
-                 
-                <dt class="stars-4"><a href="https://en.wikipedia.org/wiki/HTML" target="_blank">HTML</a></dt>
-                <dd>In active use</dd>
-                
-                <dt class="stars-4"><a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a></dt>
-                <dd>In active use</dd>
-                <dt class="stars-4-half"><a href="http://jquery.com/" target="_blank">jQuery</a></dt>
-                <dd>In active use</dd>
-                
-                <dt class="stars-3-half"><a href="http://lesscss.org/" target="_blank">LESS</a></dt>
-                <dd>In active use</dd>
-                
-                <dt class="stars-3"><a href="http://www.microsoft.com/en-us/sqlserver" target="_blank">MsSQL</a></dt>
-                <dd>In active use</dd>
-                <dt class="stars-2-half"><a href="http://www.mysql.com/" target="_blank">MySQL</a></dt>
-                <dd>In active use</dd>
-                
-                <dt class="stars-3"><a href="http://nhforge.org/" target="_blank">NHibernate</a></dt>
-                <dd>In active use</dd>
-                <dt class="stars-3"><a href="http://www.nunit.org/‎" target="_blank">NUnit</a></dt>
-                <dd>In active use</dd>
-
-                <dt class="stars-2"><a href="http://php.net/" target="_blank">PHP</a></dt>
-                <dd>Past experience</dd>
 
                 <dt class="stars-4-half"><a href="http://en.wikipedia.org/wiki/ASP.NET_Razor_view_engine" target="_blank">Razor</a></dt>
                 <dd>In active use</dd>
-
+                <dt class="stars-4-half"><a href="http://www.asp.net/mvc" target="_blank">ASP.NET MVC</a></dt>
+                <dd>In active use</dd>
+                <dt class="stars-4-half"><a href="http://jquery.com/" target="_blank">jQuery</a></dt>
+                <dd>In active use</dd>
+                <dt class="stars-4-half"><a href="http://umbraco.com/" target="_blank">Umbraco - Core APIs</a></dt>
+                <dd>Advanced active usage</dd>
                 
-                <dt class="stars-2-half"><a href="http://seleniumhq.org‎" target="_blank">Selenium </a></dt>
-                <dd>Recent active use</dd>
-                
-                <dt class="stars-2-half"><a href="http://www.jetbrains.com/teamcity/" target="_blank">TeamCity</a></dt>
-                <dd>Setting up and configuring builds</dd>
+                <dt class="stars-4"><a href="https://en.wikipedia.org/wiki/HTML" target="_blank">HTML</a></dt>
+                <dd>In active use</dd>
+                <dt class="stars-4"><a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript(Client side)</a></dt>
+                <dd>In active use</dd>
+                <dt class="stars-4"><a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank">CSS</a></dt>
+                <dd>In active use</dd>
+                <!--
                 <dt class="stars-4"><a href="http://en.wikipedia.org/wiki/List_of_HTTP_status_codes#418" target="_blank">Tea/Coffee Making</a></dt>
                 <dd>Occasional use excellent ability</dd>
                 <dt class="stars-4"><a href="http://www.appcelerator.com/platform/titanium-platform/" target="_blank">Titanium Mobile</a></dt>
                 <dd>Recent active usage</dd>
-            
-                <dt class="stars-4-half"><a href="http://umbraco.com/" target="_blank">Umbraco</a></dt>
-                <dd>Advanced active usage</dd>
+            -->
+                
 
+                <dt class="stars-3-half"><a href="http://www.asp.net/web-api" target="_blank">ASP.NET Web API </a></dt>
+                <dd>Recent active usage</dd>
+                <dt class="stars-3-half"><a href="http://lesscss.org/" target="_blank">LESS</a></dt>
+                <dd>In active use</dd>
                 <dt class="stars-3-half"><a href="http://umbraco.com/" target="_blank">WinForms</a></dt>
                 <dd>Recent active usage</dd>
+        
+                <dt class="stars-3"><a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript(Server side)</a></dt>
+                <dd>In active use</dd>
+                
+                <dt class="stars-3"><a href="http://www.microsoft.com/en-us/sqlserver" target="_blank">MsSQL</a></dt>
+                <dd>In active use</dd>
+                <dt class="stars-3"><a href="http://nhforge.org/" target="_blank">NHibernate</a></dt>
+                <dd>In active use</dd>
+                <dt class="stars-3"><a href="http://www.nunit.org/‎" target="_blank">NUnit</a></dt>
+                <dd>In active use</dd>
+                <dt class="stars-3"><a href="http://couchdb.apache.org/" target="_blank">CouchDB</a></dt>
+                <dd>Recent active usage</dd>
+                
+                 <dt class="stars-2-half"><a href="http://www.mysql.com/" target="_blank">MySQL</a></dt>
+                <dd>In active use</dd>
+                <dt class="stars-2-half"><a href="http://seleniumhq.org‎" target="_blank">Selenium </a></dt>
+                <dd>Recent active use</dd>
+                <dt class="stars-2-half"><a href="http://www.jetbrains.com/teamcity/" target="_blank">TeamCity</a></dt>
+                <dd>Setting up and configuring builds</dd>
+                
+                <dt class="stars-2"><a href="http://php.net/" target="_blank">PHP</a></dt>
+                <dd>Past experience</dd>
+                <dt class="stars-2"><a href="http://en.wikipedia.org/wiki/VB.net" target="_blank">VB.NET</a></dt>
+                <dd>Past experience</dd>
+
+
+                <dt class="stars-1-half"><a href="http://git-scm.com/" target="_blank">GIT</a></dt>
+                <dd>Preferred source control software</dd>
+                
+                <dt class="stars-1"><a href="http://angularjs.org/" target="_blank">AngularJS</a></dt>
+                <dd>Exposure</dd>
+                
+                <dt class="stars-half"><a href="http://www.elasticsearch.org/" target="_blank">Elastic Search</a></dt>
+                <dd>In active use</dd>
+                
+                
+                
+
+               
+                
+           
+
                 
             </dl>
 
@@ -391,8 +407,8 @@ margin-left: 3%;
     <div id="main">
     <section id="profile">
         <h1>Profile</h1>
-        <p>I am a passionate and proficient C# Developer with more than 6 years experience producing web complex applications in a fast paced agency setting. 
-           I am constantly honing my developer skills, keeping abreast with the latest trends in web development circles, and apply my knowledge to implement a range of practical solutions with the utmost efficiency. 
+        <p>I am a passionate and proficient full stack C# Developer with more than 6 years experience producing web complex applications in a fast paced agency setting. 
+           I am constantly honing my developer skills, keeping abreast with the latest trends in web development circles from the latest javascript frameworks like AngularJS to the the newest versions of MVC and WebAPI, and apply my knowledge to implement a range of practical solutions with the uptmost efficiency. 
            I possess a proven track record of developing .NET applications and am seeking a role that will utilise and expand on these skills. </p>
         
     
@@ -509,7 +525,9 @@ margin-left: 3%;
             <h2>Healthy Schools Programme website</h2>
             <p class="notes">This website is no longer live as the programme was drastically reduced under the coalition changes</p>
             <p>This was a website servicing all schools across all of England and Wales. The system provided was a self validation and tracking platform to improve the health and wellbeing of schools and pupils. This platform had massive reporting and a strict hierarchical security model.</p>
-            <h3>Skills</h3>
+           <p>
+Inherited as a hybrid VB.NET and C# WebForms application, over a series of refactors and rewrites became a multi system C# MVC application.</p>
+             <h3>Skills</h3>
             <ul class="tags">
                 <li>C#</li>
                 <li>SQL</li>
@@ -570,7 +588,7 @@ margin-left: 3%;
                 <li class="start_date">Mar 2007</li>
                 <li class="end_date">Present</li>
             </ol>
-            <p>Over the long period of time I have been employed at ICE I have progressed from being a junior developer all the way up to the senior developer I am today. In my role I act as the technical lead/architect on all software now being produced (Being the point of decision for both back-end and front-end development choices) not only am I responsible for leading the technical direction of the team I am also a full stack developer, developing both front end and back end solutions for internal and external clients alike.</p><p>Over my time at ICE I've been involved with a large variety of different projects. My first project(Healthy Schools Programme website)<span style="line-height: 1.2em;">&nbsp;was refactoring a hybrid VB.NET/C#, single layered, WebForms solution into an n-tier C# application (and later re-developing it as an multi-application MVC system), all whilst constantly improving/expanding the feature set.&nbsp;</span><span style="line-height: 1.2em;">Later on as my skills developed and I progressed up the job ladder I was given more and more responsibility for the full development life-cycle of projects, from scope all the way to development and deployment. Two internal projects that I did have full responsibility of delivery for was a bespoke CRM for our in house stop smoking service, and a our SaaS hosting service. The CRM was a WinForms application using a local CouchDB as a offline multi-master replicating datastore, whilst the SaaS solution was built around a core MVC and WebAPI solutions, with satellite Umbraco based sites liking in as a data/user/settings store.</span></p><p><span style="line-height: 1.2em;">But in addition to the above few projects, as a full stack developer, I have been responsible for producing countless websites for clients, developing the solution, to implementing the designs and then wiring up the&nbsp;</span>JavaScript<span style="line-height: 1.2em;">&nbsp;to back-end web-services I developed. The types of websites I have been responsible for over the years have varied in scope form simple brochure websites to complex web application used for tracking physical&nbsp;</span>activity.</p>
+            <p>Over the long period of time I have been employed at ICE I have progressed from being a junior developer all the way up to the senior developer I am today. In my role I act as the technical lead/architect on all software now being produced (Being the point of decision for both back-end and front-end development choices) not only am I responsible for leading the technical direction of the team I am also a full stack developer, developing both front end and back end solutions for internal and external clients alike.</p><p>Over my time at ICE I've been involved with a large variety of different projects. My first project(Healthy Schools Programme website)<span style="line-height: 1.2em;">&nbsp;was refactoring a hybrid VB.NET/C#, single layered, WebForms solution into an n-tier C# application (and later re-developing it as an multi-application MVC system), all whilst constantly improving/expanding the feature set.&nbsp;</span><span style="line-height: 1.2em;">Later on as my skills expanded and I progressed up the job ladder I was given more and more responsibility over the full development life-cycle of projects, from scope all the way to development and deployment. Two internal projects that I did have full responsibility of delivery for was a bespoke CRM for our in house stop smoking service, and our SaaS hosting service. The CRM was a WinForms application using a local CouchDB as a offline multi-master replicating datastore, whilst the SaaS solution was built around a core MVC and WebAPI solutions, with satellite Umbraco based sites liking in as a data/user/settings store.</span></p><p><span style="line-height: 1.2em;">In addition to the above projects, as a full stack developer, I have been responsible for producing countless websites for clients, developing the solution, to implementing the designs and then wiring up the&nbsp;</span>JavaScript<span style="line-height: 1.2em;">&nbsp;to back-end web-services I developed. The types of websites I have been responsible for over the years have varied in scope from simple brochure sites to complex web application used for tracking physical&nbsp;</span>activity.</p>
         </article>
 
         <article>
