@@ -11,6 +11,7 @@
         p,a, dd, dt, li {
             font-family: 'Inconsolata', sans-serif;
             line-height: 1.2em;
+margin-top: 0em;
 
         }
         #skills dt::after{
@@ -52,7 +53,7 @@
 
         #portfolio article {
             float:left;
-            width:46%;
+            width: 47.5%;
             min-height:190px;
             
             margin-right:2%;
@@ -61,6 +62,12 @@
             border: 1px solid #efefef;
             page-break-inside:avoid;
         }
+     #portfolio {
+         clear: both;
+     }
+     #portfolio article h4 {
+        margin: 1em 0 0.3em 0;
+     }
      #portfolio article:nth-child(2n) {
         clear: left;
      }
@@ -68,8 +75,9 @@
      margin-right: 5px;
      }
      #portfolio article h2 a {
-       display: inline-block;
-width: 80%;
+        display: inline-block;
+        width: 80%;
+        margin: 0;
      }
      #portfolio article h2 {
         margin: 0;
@@ -181,6 +189,7 @@ min-height: 85px;
             font-family: 'Averia Serif Libre', serif;
             text-decoration:none;
             font-weight:bold;
+            margin-bottom: 0em;
         }
         p.notes {
             font-style:italic;
@@ -204,10 +213,8 @@ min-height: 85px;
             font-weight: normal;
             }
 
-     h1 {
-        font-size:2em;
+     h1 {font-size: 1.6em;
         margin: 0;
-margin-bottom: 0.5em;
      }
         @media screen and (max-width: 770px){
             #skills{
@@ -264,7 +271,32 @@ margin-bottom: 0.5em;
      li.print {
          display: none;
      }
+
+     #header .tags {
+         margin-bottom: 1em;
+     }
+     h2 {
+     font-size: 1.3em;
+     
+     }
      @media print {
+         .contact li i {
+         float: right;
+         margin-left: 5px;
+         }
+         .contact li {
+         text-align: right;
+         }
+        h1, h2, h3, h4,
+        h1 a, h2 a, h3 a, h4 a {
+         margin-top: 0.5em;
+     }
+         p {
+     margin-bottom: 0.5em;    
+     }
+         dl {
+            margin: 0;
+         }
      li.print {
          display: block;
      }
@@ -276,23 +308,18 @@ margin-bottom: 0.5em;
         }
      
          #portfolio{
-            page-break-after: always;
-            page-break-inside: avoid;
-            position: relative;
         
         
          
          }
          #profile {
-            margin-top: 2em;
+         margin-top: 0.5em;
          }
         #employment, #education {
             float:left;
             width:99%;
             clear: both;
-         
-        page-break-after: always;
-        page-break-inside: avoid;position: relative;
+         position: relative;
             border-top:  none;
         }
 
@@ -338,7 +365,20 @@ top: 7px;
         <iframe id="map" style="width: 60%; float: right; height: 200px;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=Birkenhead&amp;hl=en&amp;sll=37.0625,-95.677068&amp;sspn=46.495626,87.626953&amp;hnear=Birkenhead,+Merseyside,+United+Kingdom&amp;t=m&amp;ie=UTF8&amp;hq=&amp;ll=53.390034,-3.023129&amp;spn=0.008958,0.004292&amp;z=15&amp;output=embed"></iframe>
 
         <h1>Scott Williams</h1>
+        
         <p>Based in <a target="_blank" href="https://maps.google.com/maps?q=Birkenhead&hl=en&ll=53.388703,-3.020725&spn=0.034398,0.085573&sll=37.0625,-95.677068&sspn=46.495626,87.626953&hnear=Birkenhead,+Merseyside,+United+Kingdom&t=m&z=14">Birkenhead, Wirral</a></p>
+
+        
+        <ul class="tags">
+                <li>Married</li>
+                <li>Aged 
+                <script>
+                      var birthday = +new Date("1984-02-02");
+                        document.write( ~~((Date.now() - birthday) / (31557600000)));
+                </script>
+                </li>
+                <li>Full driving licence</li>
+            </ul>
         <ul class="contact">
             <li class="print"><i class=" icon-info-sign"></i><a target="_blank" href="http://tocsoft.co.uk">tocsoft.co.uk</a></li>
             <li><i class="icon-envelope"></i><a target="_blank" href="mailto:tocsoft@gmail.com">tocsoft@gmail.com</a></li>
@@ -348,7 +388,6 @@ top: 7px;
             <li><i class="icon-stackexchange"></i><a target="_blank" href="http://stackoverflow.com/users/234855/tocsoft">stackoverflow.com</a></li>
             
         </ul>
-        
     </header>
     
 
@@ -429,16 +468,7 @@ top: 7px;
                 <dd>Exposure</dd>
                 
                 <dt class="stars-half"><a href="http://www.elasticsearch.org/" target="_blank">Elastic Search</a></dt>
-                <dd>In active use</dd>
-                
-                
-                
-
-               
-                
-           
-
-                
+                <dd>In active use</dd>                
             </dl>
 
         </section>
@@ -448,82 +478,54 @@ top: 7px;
         <p>I am a passionate and proficient full stack C# Developer with more than 6 years experience producing complex web, mobile and desktop applications in a fast paced agency setting. 
            I am constantly honing my developer skills, keeping abreast with the latest trends in web development circles from using the latest html and javascript frameworks like AngularJS to provide data dashboards to the the newest versions of MVC and WebAPI for creating large scale complex application, and apply my knowledge to implement a range of practical solutions with the uptmost efficiency. 
            I possess a proven track record of developing data driven ASP.NET web and mobile applications and I am seeking a role that will utilise and expand on these skills. </p>
+        <h4>Personal Development</h4>
+        <p>
+           I am currenty learning to use the Xamarin tools to leverage my C# developer knowledge to build mobile applications, as mobile is marketplace more and more organisations are expecting tools for the busines solutions hey are using its not just for consumer applications but mobile interfaces on to Business tools be the BI dashboards or helpdesk ticket managment.
+           I'm making sure I'll be there to rapidy be able to deliver the solutions wanted.
+        </p>
         
     
     </section>
+    
     <section id="portfolio">
         <h1>Portfolio</h1>
         
-        <article id="STELa">
-            <h2><i class="icon-mobile-phone "></i>STELa Lite</h2>
-            <p>The mobile app is based around a social marketing model, and lets you track your progress thought the model.</p>
-            <p>The app is available for both android and iphone.</p>
-            <a href="https://play.google.com/store/apps/details?id=KX4646B8J2.com.STELa.mobile.app.lite" target="_blank">Play store</a>
-            <a href="https://itunes.apple.com/gb/app/stela-lite/id427949931" target="_blank">Itunes</a>
-            
-            <h3>Skills</h3>
-            <ul class="tags">
-                <li>Titanium Mobile</li>
-                <li>JavaScript</li>
-            </ul>
-        </article>
-        
-        <article>
-            <h2><i class="icon-github"></i><a target="_blank" href="https://github.com/ICE-Creates/CookieOptIn" >CookieOptIn</a></h2>
-            <p>Provide UI and an API to manage the EU cookie opt in requirement.</p>
-            <h3>Skills</h3>
-            <ul class="tags">
-                <li>JavaScript</li>
-                <li>jQuery</li>
-            </ul>
-        </article>
-        <article>
-            <h2><i class="icon-github"></i><a target="_blank" href="https://github.com/tocsoft/rocker" >Rocker</a></h2>
-            <p>a c# POCO wrapper to CouchDB</p>
-            <p class="notes">No longer in active development.</p>
-            <h3>Skills</h3>
-            <ul class="tags">
-                <li>C#</li>
-                <li>CouchDB</li>
-            </ul>
-        </article>
-        
-        <article>
-            <h2><i class="icon-github"></i><a target="_blank" href="https://github.com/tocsoft/Common.Helpers">Common.Helpers</a></h2>
-            <p>A suite of common helper libraries used in a variety of client projects.</p>
-            <h3>Skills</h3>
-            <ul class="tags">
-                <li>C#</li>
-            </ul>
-        </article>
-
-        <article class="JavaScript jQuery">
-            <h2><i class="icon-github"></i><a target="_blank" href="https://github.com/ICE-Creates/jquery.dirtyform" >jquery.dirtyform</a></h2>
-            <p>A jQuery plug-in that can prevent navigation away from a webpage if any of the form fields have been altered.</p>
-            <h3>Skills</h3>
-            <ul class="tags">
-                <li>JavaScript</li>
-                <li>jQuery</li>
-            </ul>
-        </article>
-        
         <article class="sql javascript jquery c_sharp mvc css html nhibernate elastic_search">
-            <h2><a target="_blank" href="https://puffell.com/" >Puffell.com</a></h2>
-            <p>Head developer for platform</p>
-            <h3>Skills</h3>
+            <h2>Healthy Schools Programme website</h2>
+            <p class="notes">This website is no longer live as the programme was drastically reduced under the coalition changes</p>
+            <p>This was a masive enterprise scale wep application servicing all schools across all of England and Wales. The system provided was a self validation and tracking platform to improve the health and wellbeing of schools and pupils. This platform had massive reporting and a strict hierarchical security model.</p>
+           <p>Inherited as a hybrid VB.NET and C# WebForms application, over a series of refactors and rewrites became a multi system C# MVC application that had to scale to aproximatly 20,000 page views per day.</p>
+            <p>Key feature set that I directly developed include, Resource Search(full text indexed), Assessment tools and Custom MI/BI reporting system.</p>
+             <h3>Skills</h3>
+            <ul class="tags">
+                <li>C#</li>
+                <li>SQL</li>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+                <li>ASP.net MVC</li>
+                <li>CSS</li>
+                <li>HTML</li>
+                <li>NHibernate</li>
+            </ul>
+        </article>
+        <article class="sql javascript jquery c_sharp mvc css html nhibernate">
+            <h2><a target="_blank" href="http://www.youthsporttrust.org/">Youth Sport Trust</a></h2>
+            <p>Primary developer, creating an information website, which includes members section integrating with 3rd party custom authentication service.</p>
+            <p>Key feature set that I directly had invlovment in developing include, Resource Search(full text indexed), Assessment tools and Custom MI/BI reporting system.</p>
+             <h3>Skills</h3>
             <ul class="tags">
                 <li>C#</li>
                 <li>SQL</li>
                 <li>JavaScript</li>
                 <li>jQuery</li>
                 <li>Razor</li>
-                <li>ASP.net MVC</li>
                 <li>CSS</li>
                 <li>HTML</li>
                 <li>NHibernate</li>
-                <li>Elastic Search</li>
+                <li>Umbraco</li>
             </ul>
         </article>
+
         
         <article class="sql javascript jquery c_sharp mvc css html nhibernate">
             <h2><a target="_blank" href="http://scoile.apphb.com/">Scoile</a></h2>
@@ -560,58 +562,24 @@ top: 7px;
         </article>
         
         <article class="sql javascript jquery c_sharp mvc css html nhibernate elastic_search">
-            <h2>Healthy Schools Programme website</h2>
-            <p class="notes">This website is no longer live as the programme was drastically reduced under the coalition changes</p>
-            <p>This was a masive enterprise scale wep application servicing all schools across all of England and Wales. The system provided was a self validation and tracking platform to improve the health and wellbeing of schools and pupils. This platform had massive reporting and a strict hierarchical security model.</p>
-           <p>
-Inherited as a hybrid VB.NET and C# WebForms application, over a series of refactors and rewrites became a multi system C# MVC application that had to scale to aproximatly 20,000 page views per day.</p>
-             <h3>Skills</h3>
-            <ul class="tags">
-                <li>C#</li>
-                <li>SQL</li>
-                <li>JavaScript</li>
-                <li>jQuery</li>
-                <li>ASP.net MVC</li>
-                <li>CSS</li>
-                <li>HTML</li>
-                <li>NHibernate</li>
-            </ul>
-        </article>
-        <article id="SeX_Factor">
-            <h2><i class="icon-mobile-phone "></i>SeX Factor</h2>
-            <p>The mobile app is a game aimed as young people to teach them some fact about sexual health.</p>
-            <p>The app is available for both android and iphone.</p>
-            <a href="https://play.google.com/store/apps/details?id=KX4646B8J2.ice.EazeeScreen.BlockBuster&feature=search_result" target="_blank">Play store</a>
-            <a href="https://itunes.apple.com/gb/app/sex-factor/id418132844" target="_blank">Itunes</a>
-            
+            <h2><a target="_blank" href="https://puffell.com/" >Puffell.com</a></h2>
+            <p>Head developer for platform</p>
             <h3>Skills</h3>
-            <ul class="tags">
-                <li>Titanium Mobile</li>
-                <li>JavaScript</li>
-                <li>Web Services</li>
-                <li>Maps</li>
-                <li>ASP.net MVC</li>
-            </ul>
-            <p>The development of this app included the development on a points of interest geo indexing system, which include reverse geocoding of postcode and location names, then distance based searching by tag.</p>
-            <p>It also includes an ASP.Net MVC based web interface to update the points of interest metadata.</p>
-        </article>
-        
-        <article class="sql javascript jquery c_sharp mvc css html nhibernate">
-            <h2><a target="_blank" href="http://www.youthsporttrust.org/">Youth Sport Trust</a></h2>
-            <p>Primary developer, creating an information website, which includes members section integrating with 3rd party custom authentication service.</p>
-             <h3>Skills</h3>
             <ul class="tags">
                 <li>C#</li>
                 <li>SQL</li>
                 <li>JavaScript</li>
                 <li>jQuery</li>
                 <li>Razor</li>
+                <li>ASP.net MVC</li>
                 <li>CSS</li>
                 <li>HTML</li>
                 <li>NHibernate</li>
-                <li>Umbraco</li>
+                <li>Elastic Search</li>
             </ul>
         </article>
+        
+        
         <article class="sql javascript jquery c_sharp mvc css html nhibernate">
             <h2><a target="_blank" href="https://play.google.com/store/apps/details?id=com.icecreates.hello_world">NHS Nottingham Health App</a></h2>
             <p>Primary developer developer on the mobile application, providing health advice and mobile location services for NHS Nottingham.</p>
@@ -630,10 +598,66 @@ Inherited as a hybrid VB.NET and C# WebForms application, over a series of refac
                 <li>IPad</li>
             </ul>
         </article>
-    </section>
-    
-    </div>
 
+        <article class="JavaScript jQuery">
+            <h2><i class="icon-github"></i><a target="_blank" href="https://github.com/ICE-Creates/jquery.dirtyform" >jquery.dirtyform</a></h2>
+            <p>A jQuery plug-in that can prevent navigation away from a webpage if any of the form fields have been altered.</p>
+            <h3>Skills</h3>
+            <ul class="tags">
+                <li>JavaScript</li>
+                <li>jQuery</li>
+            </ul>
+        </article>
+        <article>
+            <h2><i class="icon-github"></i><a target="_blank" href="https://github.com/ICE-Creates/CookieOptIn" >CookieOptIn</a></h2>
+            <p>Provide UI and an API to manage the EU cookie opt in requirement.</p>
+            <h3>Skills</h3>
+            <ul class="tags">
+                <li>JavaScript</li>
+                <li>jQuery</li>
+            </ul>
+        </article>
+        <article id="SeX_Factor">
+            <h2><i class="icon-mobile-phone "></i>SeX Factor / CaSH 2 U</h2>
+            <p>The mobile apps are a game aimed as young people to teach them some fact about sexual health and help them find local clinics.</p>
+            <p>The app is available for both android and iphone.</p>
+            <p>The development of these app included the development on a points of interest geo indexing system, which include reverse geocoding of postcode and location names, then distance based searching by tag.</p>
+            <p>It also includes an ASP.Net MVC based web interface to update the points of interest metadata.</p>
+            <h4>SeX Factor</h4>
+            <a href="https://play.google.com/store/apps/details?id=KX4646B8J2.ice.EazeeScreen.BlockBuster&feature=search_result" target="_blank">Play store</a>
+            <a href="https://itunes.apple.com/gb/app/sex-factor/id418132844" target="_blank">Itunes</a>
+            <h4>CaSH 2 U</h4>
+            <a href=" https://play.google.com/store/apps/details?id=KX4646B8J2.icecreates.labs.CaSH" target="_blank">Play store</a>
+            <a href="https://itunes.apple.com/gb/app/cash-2-u/id418132555?mt=8" target="_blank">Itunes</a>
+           
+            <h3>Skills</h3>
+            <ul class="tags">
+                <li>Titanium Mobile</li>
+                <li>JavaScript</li>
+                <li>Web Services</li>
+                <li>Maps</li>
+                <li>ASP.net MVC</li>
+            </ul>
+        </article>
+        
+
+        
+        <article id="STELa">
+            <h2><i class="icon-mobile-phone "></i>STELa Lite</h2>
+            <p>The mobile app is based around a social marketing model, and lets you track your progress thought the model.</p>
+            <p>The app is available for both android and iphone.</p>
+            <a href="https://play.google.com/store/apps/details?id=KX4646B8J2.com.STELa.mobile.app.lite" target="_blank">Play store</a>
+            <a href="https://itunes.apple.com/gb/app/stela-lite/id427949931" target="_blank">Itunes</a>
+            
+            <h3>Skills</h3>
+            <ul class="tags">
+                <li>Titanium Mobile</li>
+                <li>JavaScript</li>
+            </ul>
+        </article>
+        
+    </section>
+    </div>
     <section id="employment">
         <h1>Employment History</h1>
         <article>
@@ -644,9 +668,29 @@ Inherited as a hybrid VB.NET and C# WebForms application, over a series of refac
                 <li class="start_date">Mar 2007</li>
                 <li class="end_date">Present</li>
             </ol>
-            <p>Over the long period of time I have been employed at ICE I have progressed from being a junior developer all the way up to the senior developer I am today. In my role I act as the technical lead/architect on all software now being produced (Being the point of decision for both back-end and front-end development choices) not only am I responsible for leading the technical direction of the team I am also a full stack developer, developing both front end and back end solutions for internal and external clients alike.</p><p>Over my time at ICE I've been involved with a large variety of different projects. My first project(Healthy Schools Programme website)<span style="line-height: 1.2em;">&nbsp;was refactoring a hybrid VB.NET/C#, single layered, WebForms solution into an n-tier C# application (and later re-developing it as an multi-application MVC system), all whilst constantly improving/expanding the feature set.&nbsp;</span><span style="line-height: 1.2em;">Later on as my skills expanded and I progressed up the job ladder I was given more and more responsibility over the full development life-cycle of projects, from scope all the way to development and deployment. Two internal projects that I did have full responsibility of delivery for was a bespoke CRM for our in house stop smoking service, and our SaaS hosting service. The CRM was a WinForms application using a local CouchDB as a offline multi-master replicating datastore, whilst the SaaS solution was built around a core MVC and WebAPI solutions, with satellite Umbraco based sites liking in as a data/user/settings store.</span></p>
-            <p><span style="line-height: 1.2em;">In addition to the above projects, as a full stack developer, I have been responsible for producing countless websites for clients, developing the solution, to implementing the designs and then wiring up the&nbsp;</span>JavaScript<span style="line-height: 1.2em;">&nbsp;to back-end web-services I developed. The types of websites I have been responsible for over the years have varied in scope from simple brochure sites to complex web application used for tracking physical&nbsp;</span>activity.</p>
-            <p>Finally I have a wider experiances than just developing websites, I also have also been responsible for developing web connected mobile applications (using both Phonegap and Titanium mobile), and systems that run on touchscreen kiosks using web technologies.</p>
+            <p>
+                Over the long period of time I have been employed at ICE I have progressed from being a junior developer all the way up to the midlevel/senior developer I am today. 
+                In my role I am acting as the technical lead/architect on all software now being produced (Being the point of decision for both back-end and front-end development choices)
+                not only am I responsible for leading the technical direction of the team I am also a full stack developer and fully deliver full solutions myself, 
+                developing both front end and back end solutions for internal and external clients alike.</p>
+            <p>
+                During my time at ICE I've been involved with a large variety of different projects. My first project(Healthy Schools Programme website)
+                was refactoring a hybrid VB.NET/C#, single layered, WebForms solution into an n-tier C# application (and later re-developing it as an multi-application MVC system), 
+                all whilst constantly improving/expanding the feature set. Later on as my skills expanded and I progressed up the job ladder I was given more and more responsibility 
+                over the full development life-cycle of projects, from scope all the way to development and deployment. Two internal projects that I did have full responsibility of 
+                delivery for was a bespoke CRM for our in house stop smoking service, and our SaaS hosting service. The CRM was a WinForms application using a local CouchDB as a offline 
+                multi-master replicating datastore with a customised reporting solution build ontop of couchDB's map/reduce capabilities, whilst the SaaS solution was built around a core
+                MVC and WebAPI solutions, with satellite Umbraco based sites liking in as a data/user/settings store.
+            </p>
+            <p>
+                In addition to the above projects, as a full stack developer, I have been responsible for producing countless websites for clients, developing the solution, 
+                to implementing the designs and then wiring up the JavaScript to back-end web-services I developed. The types of websites I have been responsible for over 
+                the years have varied in scope from simple brochure sites to complex web application used for tracking physical activity.
+            </p>
+            <p>
+                Finally I have a wider experiances than just developing websites, I also have also been responsible for developing web connected mobile applications (using both Phonegap 
+                and Titanium mobile), and systems that run on touchscreen kiosks using web technologies.
+            </p>
         </article>
 
         <article>
@@ -672,6 +716,7 @@ clients.</p>
         </article>
 
     </section>
+
 
     <section id="education">
         <h1>Education</h1>
