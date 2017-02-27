@@ -1,0 +1,34 @@
+
+title: My Resume
+url: 'http://tocsoft.co.uk'
+#baseurl: '/online-cv' #change it according to your repository name
+
+
+# Enable one of these styles by removing #. Style will be applied only after restarting the build or serve.
+#style: styles-2
+#style: styles-3
+#style: styles-4
+#style: styles-5
+#style: styles-6
+
+
+#Profile information
+name: Scott Williams
+tagline: Full Stack Developer
+pic: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+
+#sidebar links
+email: tocsoft@gmail.com
+#phone: 012 345 6789
+#website: blog.webjeda.com #do not add http://
+linkedin: tocsoft
+github: tocsoft
+twitter: '@tocsoft'
+
+collections:
+    projects:
+        output: false
+    experiance:
+        output: false
+
+#Update all the sections by editing the files inside _includes folder.
